@@ -1,0 +1,390 @@
+#navbarSupportedContent {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  align-items: center;
+}
+
+.navbar-nav {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  margin: 0;
+}
+
+.nav-link {
+  padding: 0;
+  margin: 0;
+}
+
+.hash {
+  color: purple;
+  margin: 0;
+  padding: 0;
+}
+
+#emphasis {
+  color: mediumorchid;
+}
+
+.row {
+  align-items: center;
+}
+
+.col1-content {
+  width: 350px;
+  height: auto;
+}
+
+.btn {
+  color: white;
+  border-color: mediumorchid;
+  border-radius: 0;
+  border-width: 2px;
+}
+
+.btn:hover {
+  background-color: mediumorchid;
+  border-color: mediumorchid;
+  border-radius: 0;
+  border-width: 2px;
+}
+
+.personal-photo img {
+  width: 100%; /* Ensures the image takes full width */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.personal-photo {
+  width: 100%; /* Optional: Ensure the picture element itself is full width */
+}
+
+.currently-working {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 5px;
+  border: solid;
+  border-color: grey;
+  border-width: 1px;
+  width: 100%;
+  height: 35px;
+}
+
+.purple-square {
+  width: 15px;
+  height: 15px;
+  background-color: mediumorchid;
+  border-radius: 1px;
+  padding-left: 5px;
+}
+
+#current-text {
+  height: fit-content;
+  padding-left: 10px;
+  margin: 0;
+}
+
+#current-text p {
+  padding: 0;
+  margin: 0;
+}
+
+#quotebody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 60px;
+}
+
+#quote {
+  width: 450px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bold;
+  border: solid;
+  border-color: grey;
+  border-width: 1px;
+}
+
+#quotesrc {
+  height: 45px;
+  width: 90px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+  border: solid;
+  border-color: grey;
+  border-width: 1px;
+}
+
+#quotesrc-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  justify-content: flex-end;
+  padding-right: 435px;
+  margin: 0;
+}
+
+#projects-div {
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 75%;
+}
+
+#projects-div-about {
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom:60px;
+  width: 75%;
+  transform:translateX(260px);
+}
+
+#projects-div-about2 {
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom:20px;
+  width: 75%;
+  transform:translateX(260px);
+}
+
+#projects-div::after {
+  width: 75%;
+  content: " ";
+  padding: 1px;
+  background-color: mediumorchid;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#view-all {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.card-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 300px;
+}
+
+.card-list-about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  padding-right: 300px;
+}
+
+.card-list-about2 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  padding-right: 300px;
+  transform: translateX(300px);
+}
+
+.card {
+  margin: 10px;
+  border-radius: 0%;
+  width: 180px;
+  height: fit-content;
+}
+
+.card2 {
+  margin: 10px;
+  border: solid;
+  border-width: 1px;
+  width: fit-content;
+  align-items:center;
+  height: 40px;
+  padding:10px;
+}
+
+.placeholder {
+  height: 150px;
+}
+
+.card-body ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+#row2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 300px;
+}
+
+#about-me-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+
+#contacts-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+
+#col2-content {
+  width: 500px;
+  transform: translateX(-50px)
+}
+
+#col3-content {
+  width: 500px;
+  transform: translateX(-50px)
+}
+
+#read-more-btn {
+  width: fit-content;
+}
+
+#btn-space {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 140px;
+}
+
+#footer, #footer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  padding-left:200px;
+  height: fit-content;
+}
+
+#footer-col {
+  display:flex;
+  flex-direction: row;
+  align-items: baseline;
+  transform: translateX(30px);
+}
+
+#footer-col2 {
+  display:flex;
+  flex-direction: row;
+  align-items: baseline;
+  transform: translateX(30px);
+}
+
+#footer-col h6 {
+  padding-right: 50px;
+}
+
+.logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+#Logo1 {
+  background-image: url(./resources/Discord.svg);
+}
+
+#Logo2 {
+  background-image: url(./resources/Github.svg);
+}
+
+#Logo3 {
+  background-image: url(./resources/Linkedin.svg);
+}
+
+#footer3{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  transform:translateX(-100px);
+}
+
+#footer3 p {
+  width: fit-content;
+}
+
+#footer-about, #footer2-about {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  padding-left:200px;
+  height: fit-content;
+  transform: translateX(80px);
+}
+
+#footer3-about {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  transform:translateX(-100px);
+}
+
+#footer3-about p {
+  width: fit-content;
+}

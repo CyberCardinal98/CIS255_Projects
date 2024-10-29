@@ -1,0 +1,13 @@
+.div1 {
+    display: flex;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+}
+
+.div3 {
+    display: flex;
+
+}

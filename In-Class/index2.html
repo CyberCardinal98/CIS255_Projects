@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function makePrimeList (max){
+                let primeList = [];
+                for(let i = 0; i < max; i++){
+                    // console.log(i)
+                    if(i % 2 === 1){
+                        primeList.push(i);
+                    }
+                }
+                return primeList;
+            }
+
+            function addPrimes (primes){
+                for(let i = 0; i < ((primes.length)/2); i++){
+                    for(let j = (primes.length - 1); j > ((primes.length)/2); j--){
+                        if(primes[i] + primes[j] === 26){
+                            console.log(primes[i] + "+" + primes[j]);
+                        }
+                    }
+                }
+            }
+            let primes = makePrimeList(26);
+            let primeSum = addPrimes(primes);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        const numbers = [1, 2, 3, 4];
+        const doubled = numbers.map(num => num * 2);
+        console.log(doubled); // Output: [2, 4, 6, 8]
+
+        const evens = numbers.filter(num => num % 2 === 0);
+        console.log(evens); // Output: [2, 4]
+
+        const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
+        console.log(sum); // Output: 10
+
+        // Traditional function
+        function add(a, b) {
+            return a + b;
+        }
+
+        // Arrow function
+        const add = (a, b) => a + b;
+
+        const name = "Alice";
+        console.log(`Hello, ${name}!`); // Output: Hello, Alice!
+
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        Person.prototype.greet = function () {
+            console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+        };
+
+        const person1 = new Person("Alice", 30);
+        person1.greet(); // Output: Hello, my name is Alice and I'm 30 years old.
+
+
+
+        class PersonClass {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            greet() {
+                console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+            }
+        }
+
+        const person2 = new PersonClass("Bob", 25);
+        person2.greet(); // Output: Hello, my name is Bob and I'm 25 years old.
+
+
+
+        // Parent Constructor
+        function Animal(name) {
+            this.name = name;
+        }
+
+        Animal.prototype.speak = function () {
+            console.log(`${this.name} makes a noise.`);
+        };
+
+        // Child Constructor
+        function Dog(name, breed) {
+            Animal.call(this, name); // Inherit properties from Animal
+            this.breed = breed;
+        }
+
+        // Inherit methods from Animal
+        Dog.prototype = Object.create(Animal.prototype);
+        Dog.prototype.constructor = Dog;
+
+        // Add a new method for Dog
+        Dog.prototype.bark = function () {
+            console.log(`${this.name} the ${this.breed} barks!`);
+        };
+
+        // Test Inheritance
+        const myDog = new Dog("Rex", "Labrador");
+        myDog.speak(); // Output: Rex makes a noise.
+        myDog.bark();  // Output: Rex the Labrador barks!
+
+        // Parent Class
+        class Animal {
+            constructor(name) {
+                this.name = name;
+            }
+
+            speak() {
+                console.log(`${this.name} makes a noise.`);
+            }
+        }
+
+        // Child Class
+        class Dog extends Animal {
+            constructor(name, breed) {
+                super(name); // Call the parent constructor
+                this.breed = breed;
+            }
+
+            bark() {
+                console.log(`${this.name} the ${this.breed} barks!`);
+            }
+        }
+
+        // Test Inheritance
+        const myDogs = new Dog("Rex", "Labrador");
+        myDogs.speak(); // Output: Rex makes a noise.
+        myDogs.bark();  // Output: Rex the Labrador barks!
+
+        function Person(name) {
+            this.name = name;
+        }
+
+        Person.prototype.greet = function () {
+            console.log(`Hello, I'm ${this.name}`);
+        };
+
+        const alice = new Person("Alice");
+        alice.greet(); // Inherited from Person.prototype
+
+    </script>
+</body>
+
+</html>

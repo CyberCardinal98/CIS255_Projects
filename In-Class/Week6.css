@@ -1,0 +1,101 @@
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px
+}
+
+.card{
+    background-color: lightgray;
+    border-radius: 5px;
+    
+}
+
+.card-contents{
+    visibility: hidden;
+}
+.card-contents:hover{
+    visibility:visible
+}
+#card1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+#card2{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
+    padding-left: 10px;
+}
+
+#card3{
+    padding-left: 10px;
+}
+#float1{
+    float:left
+}
+
+#float2{
+    float: right;
+    margin-right: 50%;
+}
+
+#card4{
+    background-color:red;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+#card5 div{
+    display: inline-block;
+}
+
+#card6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card8{
+    padding: 20px;
+}
+
+#card9{
+    padding-top:30px;
+    padding-left:50px;
+}
+
+@media (max-width: 768px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px,1fr));
+        
+    }
+
+    .card{
+        background-color: lightgray;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 480px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px,1fr));
+        
+    }
+
+    .card{
+        background-color: lightgray;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        let names = ['Penny Franklin',
+          'Marti Graham', 
+          'Connie Froggatt', 
+          'Joseph Ivers', 
+          'Connie Froggatt', 
+          'Penny Franklin', 
+          'Connie Froggatt', 
+          'Bruce Stanger', 
+          'Connie Froggatt', 
+          'Barbara Skinner', 
+          'Barbara Skinner'
+        ];
+        let moreNames = ["Penny Franklin",
+            "Connie Froggatt",
+            "Barbara Skinner",
+            "Connie Froggatt",
+            "Jose Antonio Gomez-Iglesias",
+            "Bruce Stanger",
+            "Barbara Skinner",
+            "Barbara Skinner"
+        ];
+        const allNames = names.concat(moreNames);
+        console.log(names);
+        console.log(moreNames);
+        console.log(allNames);
+        let counters = {};
+        for(let index = 0; index < moreNames.length; index++){
+            console.log(counters[allNames[index]])
+            if(counters[allNames[index]] == undefined){
+                counters[allNames[index]] = 1
+            } else {
+                counters[allNames[index]] += 1
+            }
+        }
+    </script>
+</body>

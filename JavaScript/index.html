@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Placeholder</title>
+    </head>
+    <body>
+        <h1>Title</h1>
+        <input type="text" id="textIn" placeholder="placeholder">
+        <button id="addBtn">Button</button>
+        <div id="output">
+
+
+        </div>
+
+        <script>
+            document
+                .getElementById('addBtn')
+                .addEventListener('click', function(){
+                    let textContent = " ";
+                    for(let index = 0; index < 10; index++){
+                        textContent += document
+                        .getElementById('textIn')
+                        .value + "</br>"
+                    }
+
+                    document
+                        .getElementById('output')
+                        .innerHTML = textContent
+                });
+            // alert("This is an alert")
+
+            // console.log("this is placed in console")
+
+            // let a = "abc";
+            // let b = 1;
+            // let bool = true;
+            // let arr = [1, "a", true];
+            // let obj = {
+            //     thisKey: "value",
+            //     arr: [1,2,3,4]
+            // };
+
+            // if(bool === true){
+            //     console.log("PAPAYAS 4 LYFE!!!")
+            // }
+
+            // if(bool == true){
+            //     console.log("WAKAWAKAWAKA!!!")
+            // }
+
+            // for(let index = 0; index < 4; index++){
+            //     console.log("DO A BARREL ROLL!!" + index)
+            // }
+
+            // console.log(document.getElementById('addBtn'))
+
+            // document
+            //     .getElementById('addBtn')
+            //     .addEventListener('click', function(){
+            //         let test = " ";
+            //         for(let index = 0; index < 5; index++){
+
+            //             test = test + "<h1>Test</h1>"
+            //             test += test + "<h1>Test</h1>"
+            //         //     console.log("LEEEROOOOY JEENKIIIIINS!!")
+            //         //     document
+            //         //         .getElementById('output')
+            //         //         .append(<h1>Test</h1>)
+            //         }
+            //         console.log(test);
+            //         document
+            //             .getElementById('output')
+            //             .innerHTML = test
+                    
+            //     });
+            // console.log()
+
+            //document.getElementById('addBtn').addEventListener
+        </script>
+    </body>
+</html>

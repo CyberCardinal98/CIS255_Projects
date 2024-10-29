@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function findana(word){
+                let index = -1;
+                for(let i = 0; i < word.length; i++){
+                    if(word[i] == "a"){
+                        index = i;
+                        break;
+                    }
+                }
+
+                if(index != -1){
+                    const suffix = input.slice(index);
+                    console.log(suffix);
+                }
+            }
+            var word = prompt("enter a word with the letter 'a':");
+            findana(word);
+        </script>
+    </body>
+</html>
